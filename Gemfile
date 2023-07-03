@@ -9,6 +9,8 @@ gem "sprockets-rails"
 
 gem "pg", "~> 1.1"
 
+gem "haml-rails"
+
 gem "puma", "~> 5.0"
 
 gem "jsbundling-rails"
