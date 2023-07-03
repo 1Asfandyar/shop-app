@@ -7,6 +7,8 @@ gem "rails", "~> 7.0.6"
 
 gem "sprockets-rails"
 
+gem 'devise'
+
 gem "pg", "~> 1.1"
 
 gem "haml-rails"
