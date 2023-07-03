@@ -6,6 +6,7 @@ class Category < ApplicationRecord
   belongs_to :parent, class_name: 'Category', optional: true
 
   has_and_belongs_to_many :products
+  has_one_attached :cover_image
 
   validates :name, presence: true
 end
