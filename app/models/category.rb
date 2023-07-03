@@ -9,4 +9,14 @@ class Category < ApplicationRecord
   has_one_attached :cover_image
 
   validates :name, presence: true
+  # validate :cover_image
+
+  def acceptable_image
+    return unless cover_image.attached?
+
+    acceptable_types = ['image/jpeg', 'image/png']
+    return if acceptable_types.include?(cover_image.content_type)
+
+    errors.add(cover_image, 'must be a JPEG or PNG')
+  end
 end
