@@ -1,0 +1,8 @@
+.card.h-100
+  =image_tag category.cover_image, class: "card-img-top", alt: "..."
+  .card-body.p-4
+  .text-center
+    %h5.fw-bolder= category.name
+  .card-footer.p-4.pt-0.border-top-0.bg-transparent
+  .text-center
+    %a.btn.btn-outline-dark.mt-auto{href: category_path(category)} View

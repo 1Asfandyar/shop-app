@@ -7,6 +7,8 @@ ruby '3.1.4'
 
 gem 'rails', '~> 7.0.6'
 
+gem 'devise'
+
 gem 'rails_admin'
 
 gem 'sprockets-rails'
@@ -46,8 +48,7 @@ gem 'bootsnap', require: false
 # Use Sass to process CSS
 # gem "sassc-rails"
 
-# Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
-# gem "image_processing", "~> 1.2"
+gem 'image_processing', '~> 1.2'
 
 group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
@@ -63,4 +64,7 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 end
+<<<<<<< HEAD
 gem 'sassc-rails'
+=======
+>>>>>>> 0ea61c649c2f8e0be57656959e923dd2fb5c27f6
