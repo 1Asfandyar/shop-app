@@ -7,6 +7,8 @@ ruby '3.1.4'
 
 gem 'rails', '~> 7.0.6'
 
+gem 'rails_admin'
+
 gem 'sprockets-rails'
 
 gem 'pg', '~> 1.1'
@@ -61,3 +63,4 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 end
+gem "sassc-rails"
