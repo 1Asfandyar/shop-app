@@ -1,0 +1,103 @@
+Style/TrailingCommaInHashLiteral:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Exclude:
+    - app/operations/**/*
+    - app/controllers/**/*
+    - app/workers/**/*
+    - app/services/**/*
+
+Metrics/BlockLength:
+  Exclude:
+    - config/routes/*
+    - config/routes.rb
+    - spec/**/*
+    - 'db/migrate/*'
+    - 'spec/**/*.rb'
+    - app/operations/api/v1/lib/contract/*
+    - app/controllers/api/v1/**/*
+    - lib/tasks/**/*
+    - config/environments/*.rb
+    - app/operations/api/v1/lib/serializers/*.rb
+    - bin/bundle
+
+
+Metrics/AbcSize:
+  Exclude:
+   - app/controllers/api/v0/sidebars_controller.rb
+   - 'db/migrate/*'
+   - app/controllers/checks_controller.rb
+   - app/controllers/api/v0/checks_controller.rb
+   - app/services/reports/api/profit_and_loss_statements/api_response_object_service.rb
+   - app/services/reports/api/balance_sheets/api_response_object_service.rb
+   - lib/three_way_summary_renderer.rb
+   - app/services/external_transactions/deposits/page_props.rb
+   - app/services/clio/lib/builder/client.rb
+   - app/services/practice_panther_integrations/lib/builder/client.rb
+   - app/services/credit_card_activities/create.rb
+   - app/services/transfer_funds/edit.rb
+   - app/serializers/api/v0/account_matter_serializer.rb
+   - bin/bundle
+
+
+Metrics/ParameterLists:
+  Exclude:
+    - lib/transaction_renderer_utility.rb
+    - lib/month_end_client_activity_report_renderer.rb
+    - bin/bundle
+
+    
+Metrics/MethodLength:
+  Exclude:
+    - 'bin/bundle'
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+  Exclude:
+    - 'bin/bundle'
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+  Exclude:
+    - 'bin/bundle'
+
+Style/HashSyntax:
+  Enabled: false
+
+Naming/VariableNumber:
+  Enabled: false
+
+Style/OpenStructUse:
+  Enabled: false
+
+Style/FetchEnvVar:
+  Enabled: false
+
+Style/RedundantRegexpEscape:
+  Exclude:
+    - app/operations/api/v1/application_contract.rb
+
+Lint/MissingSuper:
+  Enabled: false
+
+Layout/LineLength:
+  Exclude:
+    - db/migrate/*.rb
+    - bin/bundle
+
+
+Style/SymbolProc:
+  Exclude:
+    - app/operations/api/v1/lib/serializers/transaction_blueprint.rb
+
+Style/CollectionMethods:
+  Exclude:
+    - app/services/calculators/running_balance/account.rb
+
+Style/OptionalBooleanParameter:
+  Exclude:
+    - lib/transaction_renderer_utility.rb
+    - lib/month_end_renderer.rb
+
+
