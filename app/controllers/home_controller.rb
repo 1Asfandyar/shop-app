@@ -2,5 +2,7 @@
 
 # dashboard controller
 class HomeController < ApplicationController
-  def index; end
+  def index
+    @categories = Category.with_attached_cover_image
+  end
 end
