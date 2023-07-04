@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -5,11 +7,13 @@ ruby '3.1.4'
 
 gem 'rails', '~> 7.0.6'
 
-gem 'sprockets-rails'
-
 gem 'devise'
 
-gem "pg", "~> 1.1"
+gem 'rails_admin'
+
+gem 'sprockets-rails'
+
+gem 'pg', '~> 1.1'
 
 gem 'haml-rails'
 
@@ -26,6 +30,10 @@ gem 'cssbundling-rails'
 gem 'jbuilder'
 
 gem 'redis', '~> 4.0'
+
+gem 'sass-rails'
+
+gem 'bootstrap', '~> 5.0'
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"

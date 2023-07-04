@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# ApplicationRecord
+# application record
 class ApplicationRecord < ActiveRecord::Base
   primary_abstract_class
 end
