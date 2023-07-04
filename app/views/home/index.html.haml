@@ -1,7 +1,5 @@
 %body
-  %nav.navbar.navbar-expand-lg.navbar-light.bg-light
-    .container.px-4.px-lg-5
-      %a.navbar-brand{href: "#!"} Machine Shop
+  = render partial: 'partials/navbar'
   / Header
   %header.bg-dark.py-7.header-image
     .container.px-4.px-lg-5.my-5
@@ -23,11 +21,10 @@
                   / Product name
                   %h5.fw-bolder Fancy Product
                   / Product price
-                  $40.00
               / Product actions
               .card-footer.p-4.pt-0.border-top-0.bg-transparent
                 .text-center
-                  %a.btn.btn-outline-dark.mt-auto{href: "#"} View 
+                  = link_to 'View', '#', class: 'btn btn-outline-dark mt-auto'
         %end
         
   / Footer
