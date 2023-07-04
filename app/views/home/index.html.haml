@@ -9,26 +9,8 @@
   %section.py-5
     .container.px-4.px-lg-5.mt-5
       .row.gx-4.gx-lg-5.row-cols-md-3
-<<<<<<< HEAD
-        - for i in 1..12 do
-          .col.mb-5
-            .card.h-100
-              / Product image
-              %img.card-img-top{alt: "...", src: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg"}/
-              / Product details
-              .card-body.p-4
-                .text-center
-                  / Product name
-                  %h5.fw-bolder Fancy Product
-                  / Product price
-              / Product actions
-              .card-footer.p-4.pt-0.border-top-0.bg-transparent
-                .text-center
-                  = link_to 'View', '#', class: 'btn btn-outline-dark mt-auto'
-=======
         - for category in @categories do
           = render "category", category: category
->>>>>>> 0ea61c649c2f8e0be57656959e923dd2fb5c27f6
         %end
         
   / Footer

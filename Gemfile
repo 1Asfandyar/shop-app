@@ -64,7 +64,3 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 end
-<<<<<<< HEAD
-gem 'sassc-rails'
-=======
->>>>>>> 0ea61c649c2f8e0be57656959e923dd2fb5c27f6
