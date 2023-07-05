@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -50,7 +48,8 @@ ActiveRecord::Schema[7.0].define(version: 20_230_703_193_145) do
     t.integer 'parent_id'
     t.datetime 'created_at', null: false
     t.datetime 'updated_at', null: false
-    t.index ['name'], name: 'index_categories_on_name', unique: true
+    t.index %w[name parent_id], name: 'index_categories_on_name_and_parent_id', unique: true
+    t.index ['name'], name: 'index_categories_on_name'
     t.index ['parent_id'], name: 'index_categories_on_parent_id'
   end
 
