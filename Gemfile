@@ -7,11 +7,11 @@ ruby '3.1.4'
 
 gem 'rails', '~> 7.0.6'
 
-gem 'devise' , '~> 4.9.2'
+gem 'devise', '~> 4.9.2'
 
-gem 'rails_admin' , '~> 3.1.2'
+gem 'rails_admin', '~> 3.1.2'
 
-gem 'sprockets-rails' , '~> 3.4.2'
+gem 'sprockets-rails', '~> 3.4.2'
 
 gem 'pg', '~> 1.1'
 
