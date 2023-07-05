@@ -11,6 +11,8 @@ class Category < ApplicationRecord
   validates :name, presence: true
   # validate :cover_image
 
+  scope :only_root, -> { where parent: nil }
+
   def acceptable_image
     return unless cover_image.attached?
 
