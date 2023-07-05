@@ -10,7 +10,7 @@
     .container.px-4.px-lg-5.mt-5
       .row.gx-4.gx-lg-5.row-cols-md-3
         - for category in @categories do
-          = render "card", category: category
+          = render "partials/category", category: category
         %end
         
   / Footer
