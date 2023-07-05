@@ -269,23 +269,23 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   bootstrap (~> 5.0)
-  cssbundling-rails
+  cssbundling-rails (~> 1.2.0)
   debug
-  devise
-  haml-rails
+  devise (~> 4.9.2)
+  haml-rails (~> 2.1.0)
   html2haml
   image_processing (~> 1.2)
-  jbuilder
-  jsbundling-rails
+  jbuilder (~> 2.11.5)
+  jsbundling-rails (~> 1.1.2)
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.6)
-  rails_admin
+  rails_admin (~> 3.1.2)
   redis (~> 4.0)
-  sass-rails
-  sprockets-rails
-  stimulus-rails
-  turbo-rails
+  sass-rails (~> 6.0.0)
+  sprockets-rails (~> 3.4.2)
+  stimulus-rails (~> 1.2.1)
+  turbo-rails (~> 1.4.0)
   tzinfo-data
   web-console
 
