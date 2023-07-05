@@ -12,4 +12,10 @@
     = render partial: 'partials/navbar'
     -# %p.notice= notice
     -# %p.alert= alert
-    = yield
+    = yield        
+    / Footer
+    %footer.py-5.bg-dark
+      .container
+        %p.m-0.text-center.text-white Copyright © Your Website 2023
+    / Bootstrap core JS
+    %script{src: "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"}
