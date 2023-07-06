@@ -5,9 +5,9 @@
   %section.py-5
     .container.px-4.px-lg-5.mt-5
       .row.gx-4.gx-lg-5.row-cols-md-3
-        - for i in 1..21
+        - for product in @products
           .col.mb-5
-            = render partial: 'partials/product_card'
+            = render partial: 'partials/product_card', product: product
         %end
         
   / Footer
