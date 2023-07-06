@@ -1,18 +1,15 @@
 
 
 %body
-  / Section
-  %section.py-5
-    .container.px-4.px-lg-5.mt-5
-      .row.gx-4.gx-lg-5.row-cols-md-3
-        - for i in 1..21
-          .col.mb-5
-            = render partial: 'partials/product_card'
-        %end
-        
-  / Footer
-  %footer.py-5.bg-dark
-    .container
-      %p.m-0.text-center.text-white Copyright © Your Website 2023
-  / Bootstrap core JS
-  %script{src: "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"}
+
+%section.jumbotron.text-center.jumbo
+  .container
+    %h1.jumbotron-heading E-COMMERCE PRODUCT
+/ Section
+%section.py-5
+  .container.px-4.px-lg-5.mt-5
+    .row.gx-4.gx-lg-5.row-cols-md-3
+      - for i in 1..21
+        .col.mb-5
+          = render partial: 'partials/product_card'
+      %end
