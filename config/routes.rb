@@ -10,5 +10,7 @@ Rails.application.routes.draw do
   # root 'products#show'
 
   resources :categories, except: :index
-  resources :products, only: :show
+  get '/products/:id', to: 'products#show', as: 'products'
+  get 'category/:category_id/products/', to: 'products#index', as: 'category_products'
+  # resources :products, only: :show
 end
