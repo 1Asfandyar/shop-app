@@ -1,0 +1,101 @@
+%link#bootstrap-css{:href => "//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css", :rel => "stylesheet"}/
+%script{:src => "//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"}
+%script{:src => "//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"}
+/ ---- Include the above in your HEAD tag --------
+%link{:crossorigin => "anonymous", :href => "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", :integrity => "sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", :rel => "stylesheet"}/
+%section.jumbotron.text-center
+  .container
+    %h1.jumbotron-heading E-COMMERCE PRODUCT
+    %p.lead.text-muted.mb-0 Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500...
+.container
+  .row
+    .col
+      %nav{"aria-label" => "breadcrumb"}
+        %ol.breadcrumb
+          %li.breadcrumb-item
+            %a{:href => "/"} Home
+          %li.breadcrumb-item
+            %a{:href => "category.html"} Category
+          %li.breadcrumb-item.active{"aria-current" => "page"} Product
+.container
+  .row
+    / Image
+    .col-12.col-lg-6
+      .card.bg-light.product-card.mb-3
+        .card-body
+          %a{"data-target" => "#productModal", "data-toggle" => "modal", :href => ""}
+            %img.img-fluid{:src => "https://images.unsplash.com/photo-1620799139834-6b8f844fbe61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=772&q=80"}/
+            %p.text-center Zoom
+    / Add to cart
+    .col-12.col-lg-6.add_to_cart_block
+      .card.bg-light.product-card.mb-3
+        .card-body
+          %p.price 99.00 $
+          %p.price_discounted 149.90 $
+          %form{:action => "cart.html", :method => "get"}
+            .form-group
+              %label{:for => "colors"} Color
+              %select#colors.custom-select
+                %option{:selected => "selected"} Select
+                %option{:value => "1"} Blue
+                %option{:value => "2"} Red
+                %option{:value => "3"} Green
+            .form-group
+              %label Quantity :
+              .input-group.mb-3
+                .input-group-prepend
+                  %button.quantity-left-minus.btn.btn-danger.btn-number{"data-field" => "", "data-type" => "minus", :type => "button"}
+                    %i.fa.fa-minus
+                %input#quantity.form-control{:max => "100", :min => "1", :name => "quantity", :type => "text", :value => "1"}/
+                .input-group-append
+                  %button.quantity-right-plus.btn.bg-li.btn-number{"data-field" => "", "data-type" => "plus", :type => "button"}
+                    %i.fa.fa-plus
+            %a.btn.bg-li.btn-lg.btn-block.text-uppercase{:href => "cart.html"}
+              %i.fa.fa-shopping-cart
+              Add To Cart
+        
+  .row
+    / Description
+    .col-12
+      .card.border-light.product-card.mb-3
+        .card-header.bg-li.text-white.text-uppercase
+          %i.fa.fa-align-justify
+          Description
+        .card-body
+          %p.card-text
+            Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+          %p.card-text
+            Contrairement à une opinion répandue, le Lorem Ipsum n'est pas simplement du texte aléatoire. Il trouve ses racines dans une oeuvre de la littérature latine classique datant de 45 av. J.-C., le rendant vieux de 2000 ans. Un professeur du Hampden-Sydney College, en Virginie, s'est intéressé à un des mots latins les plus obscurs, consectetur, extrait d'un passage du Lorem Ipsum, et en étudiant tous les usages de ce mot dans la littérature classique, découvrit la source incontestable du Lorem Ipsum. Il provient en fait des sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum" (Des Suprêmes Biens et des Suprêmes Maux) de Cicéron. Cet ouvrage, très populaire pendant la Renaissance, est un traité sur la théorie de l'éthique. Les premières lignes du Lorem Ipsum, "Lorem ipsum dolor sit amet...", proviennent de la section 1.10.32.
+    / Reviews
+    #reviews.col-12
+      .card.border-light.product-card.mb-3
+        .card-header.bg-li.text-white.text-uppercase
+          %i.fa.fa-comment
+          Reviews
+        .card-body
+          .review
+            %span.glyphicon.glyphicon-calendar{"aria-hidden" => "true"}
+            = succeed "January" do
+              %meta{:content => "01-01-2016", :itemprop => "datePublished"}/
+            %span.fa.fa-star
+            %span.fa.fa-star
+            %span.fa.fa-star
+            %span.fa.fa-star
+            %span.fa.fa-star
+            by Paul Smith
+            %p.blockquote
+            %p.mb-0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+            %hr/
+          .review
+            %span.glyphicon.glyphicon-calendar{"aria-hidden" => "true"}
+            = succeed "January" do
+              %meta{:content => "01-01-2016", :itemprop => "datePublished"}/
+            %span.fa.fa-star{"aria-hidden" => "true"}
+            %span.fa.fa-star{"aria-hidden" => "true"}
+            %span.fa.fa-star{"aria-hidden" => "true"}
+            %span.fa.fa-star{"aria-hidden" => "true"}
+            %span.fa.fa-star{"aria-hidden" => "true"}
+            by Paul Smith
+            %p.blockquote
+            %p.mb-0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+            %hr/
