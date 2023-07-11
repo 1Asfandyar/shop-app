@@ -13,6 +13,17 @@ class Category < ApplicationRecord
 
   scope :only_root, -> { where parent: nil }
 
+  def category_names
+    category_path = []
+    current_category = self
+    while current_category
+      category_path.unshift(current_category.name)
+      current_category = current_category.parent
+    end
+
+    category_path
+  end
+
   def acceptable_image
     return unless cover_image.attached?
 
