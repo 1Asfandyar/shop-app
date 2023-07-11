@@ -160,67 +160,551 @@ categories_name_list = {
     }
   },
   'Home & Furniture': {
-    'Furniture': {},
-    'Home furnishings': {},
-    'Home accessories': {},
-    'Storage & shelving': {},
-    'Laundry & utility': {},
-    'Cooking & dining': {}
+    'Furniture': {
+      "Bedroom furniture": {},
+      "Wardrobes": {},
+      "Sliding wardrobe doors": {},
+      "Create your own storage": {},
+      "Beds": {},
+      "Chairs": {},
+      "Bedside tables": {},
+      "Chest of drawers": {},
+      "Mattresses": {},
+      "Desks": {},
+      "Tables": {},
+      "Sideboards": {},
+    },
+    'Home furnishings': {
+      "Home decor trends": {},
+      "Blinds": {},
+      "Curtains": {},
+      "Curtain poles": {},
+      "Curtain tracks": {},
+      "Curtain accessories": {},
+      "Cushions": {},
+      "Rugs": {},
+      "Door mats": {},
+      "Bedding": {},
+      "Throws & blankets": {},
+      "Bean bags": {}
+    },
+    "Home accessories": {
+      "Mirrors": {},
+      "Wall art": {},
+      "Picture frames": {},
+      "Ornaments": {},
+      "Artificial flowers": {},
+      "Bottles, vases & jars": {},
+      "Clocks": {},
+      "Candles": {},
+      "Candle holders": {},
+      "Children's decor": {},
+      "Crafts, stationery & books": {}
+    },
+    "Storage & shelving": {
+      "Shelves": {},
+      "Shelf supports": {},
+      "Shelving systems": {},
+      "Shelving units": {},
+      "Storage baskets": {},
+      "Storage trunks": {},
+      "Storage boxes": {},
+      "Storage cubes": {},
+      "Storage cabinets": {},
+      "Storage drawers": {},
+      "Packaging": {},
+      "Garage storage": {}
+    },
+    "Laundry & utility": {
+      "Laundry baskets": {},
+      "Irons": {},
+      "Ironing boards": {},
+      "Clothes airers": {},
+      "Washing lines": {},
+      "Household cleaning": {},
+      "Bins": {},
+      "Buckets": {},
+      "Brooms": {},
+      "Vacuum cleaners": {},
+      "Steam cleaners": {},
+      "Window vacuums": {}
+    },
+    "Cooking & dining": {
+      "Kitchen storage & accessories": {},
+      "Tableware": {},
+      "Cookware": {},
+      "Kitchen utensils": {},
+      "Drinkware": {},
+      "Bakeware": {},
+      "Pans": {},
+      "Mugs & cups": {},
+      "Cutlery": {},
+      "Kitchen scales": {},
+      "Dinner sets": {},
+      "Bread bins": {}
+    }
   },
-  'Kitchen & Appliances': {
-    'Fitted kitchens': {},
-    'Kitchen cabinets & doors': {},
-    'Kitchen worktops': {},
-    'Kitchen taps': {},
-    'Kitchen sinks': {},
-    'Kitchen appliances': {},
+  "Kitchen & Appliances": {
+    "Fitted kitchens": {
+      "Browse ranges": {},
+      "Book an appointment": {},
+      "Installation": {},
+      "Kitchen finance": {},
+      "Kitchen trends for 2023": {},
+      "Kitchen ideas & advice": {},
+      "Open plan kitchen ideas": {},
+      "Green kitchens": {},
+      "Blue kitchens": {},
+      "Grey kitchens": {},
+      "White kitchens": {},
+      "Luxury kitchen ideas": {}
+    },
+    "Kitchen cabinets & doors": {
+      "Kitchen doors": {},
+      "Kitchen units": {},
+      "Complete kitchen units": {},
+      "Kitchen cabinet storage": {},
+      "Plinths & panels": {},
+      "Drawer boxes": {},
+      "Kitchen storage": {}
+    },
+    "Kitchen worktops": {
+      "Laminate worktops": {},
+      "Solid wood worktops": {},
+      "Acrylic worktops": {},
+      "Bespoke worktops": {},
+      "Kitchen splashbacks": {},
+      "Edging tape": {},
+      "Worktop installation": {},
+      "End caps & joints": {}
+    },
+    "Kitchen taps": {
+      "Mixer taps": {},
+      "Pull out taps": {},
+      "Boiling water taps": {},
+      "Filter taps": {},
+      "Pillar taps": {},
+      "Black taps": {},
+      "Silver taps": {},
+      "Gold taps": {}
+    },
+    "Kitchen sinks": {
+      "1 bowl sinks": {},
+      "1.5 bowl sinks": {},
+      "2 bowl sinks": {},
+      "Stainless steel sinks": {},
+      "Composite sinks": {},
+      "Ceramic sinks": {},
+      "Resin sinks": {},
+      "Undermount sinks": {},
+      "Black sinks": {},
+      "Grey sinks": {}
+    },
+    "Kitchen appliances": {
+      "Ovens": {},
+      "Cookers": {},
+      "Hobs": {},
+      "Cooker hoods": {},
+      "Fridges & freezers": {},
+      "Laundry appliances": {},
+      "Dishwashers": {},
+      "Microwaves": {},
+      "Air fryers": {},
+      "Slow cookers": {},
+      "Small appliance sets": {},
+      "Coffee machines": {}
+    }
   },
   'Bathroom & Showers': {
-    'Bathroom furniture': {},
-    'Showering': {},
-    'Toilets': {},
-    'Baths': {},
-    'Basins': {},
-    'Bathroom taps': {}
+    "Bathroom furniture": {
+      "Vanity units": {},
+      "Bathroom cabinets": {},
+      "Bathroom suites": {},
+      "Bathroom storage": {},
+      "Bathroom mirrors": {},
+      "Fitted bathroom furniture": {},
+      "Bathroom accessories": {},
+      "Bathroom furniture sets": {},
+      "Bathroom worktops": {}
+    },
+    "Showering": {
+      "Enclosures & doors": {},
+      "Shower trays": {},
+      "Mixer showers": {},
+      "Electric showers": {},
+      "Power showers": {},
+      "Digital showers": {},
+      "Shower kits": {},
+      "Shower heads": {},
+      "Riser rails": {},
+      "Shower hoses": {},
+      "Wet rooms": {}
+    },
+    "Toilets": {
+      "Close-coupled toilets": {},
+      "Back to wall toilets": {},
+      "Wall hung toilets": {},
+      "High & low level toilets": {},
+      "Toilet seats": {},
+      "Soft close toilet seats": {},
+      "Bidets": {},
+      "Toilet brushes": {}
+    },
+    "Baths": {
+      "Shower baths": {},
+      "Freestanding baths": {},
+      "Straight baths": {},
+      "Whirlpool baths": {},
+      "Walk-in baths": {},
+      "Corner baths": {},
+      "Bath panels": {},
+      "Bath screens": {},
+      "Bath feet": {}
+    },
+    "Basins": {
+      "Counter top basins": {},
+      "Cloakroom basins": {},
+      "Pedestal basins": {},
+      "Wall hung basins": {},
+      "Semi recessed basins": {}
+    },
+    "Bathroom taps": {
+      "Basin taps": {},
+      "Basin mixer taps": {},
+      "Basin pillar taps": {},
+      "Bath shower mixer taps": {},
+      "Bath mixer taps": {},
+      "Bath taps": {},
+      "Bath pillar taps": {},
+      "Freestanding bath taps": {}
+    }
   },
   'Building & Hardware': {
-    'Building supplies': {},
-    'Timber & joinery': {},
-    'Hardware': {},
-    'Doors & windows': {}
+    "Building supplies": {
+      "Aggregates": {},
+      "Bricks & blocks": {},
+      "Cements & additives": {},
+      "Insulation": {},
+      "Plasterboard": {},
+      "Plastering supplies": {},
+      "Coving": {},
+      "Roofing supplies": {},
+      "Guttering": {},
+      "Builder's metalwork": {},
+      "Sealants": {},
+      "Access panels": {}
+    },
+    "Timber & joinery": {
+      "Timber": {},
+      "Sheet wood": {},
+      "Furniture boards": {},
+      "Mouldings": {},
+      "Skirting board": {},
+      "Architrave": {},
+      "Cladding": {},
+      "Loft boards": {},
+      "Scaffold boards": {},
+      "Stairs & stair parts": {}
+    },
+    "Hardware": {
+      "Screws": {},
+      "Handles & knobs": {},
+      "Hinges": {},
+      "Bolts, nuts & washers": {},
+      "House signs": {},
+      "Locks & padlocks": {},
+      "Brackets": {},
+      "Hooks": {},
+      "Furniture hardware": {},
+      "Fixings & wall plugs": {},
+      "Nails": {},
+      "Ropes, bungees & chains": {}
+    },
+    "Doors & windows": {
+      "Internal doors": {},
+      "External doors": {},
+      "Garage doors": {},
+      "Windows": {},
+      "Door locks & latches": {},
+      "Door frames": {},
+      "Door canopies": {},
+      "Loft hatches": {}
+    }
   },
   'Tiling & Flooring': {
-    'Flooring': {},
-    'Tiles': {},
-    'Flooring tools': {},
-    'Tiling tools': {}
+    "Flooring": {
+      "Laminate flooring": {},
+      "Luxury vinyl click flooring": {},
+      "Sheet vinyl": {},
+      "Adhesive vinyl tiles": {},
+      "Solid wood flooring": {},
+      "Engineered wood flooring": {},
+      "Adhesive vinyl planks": {},
+      "Carpet": {},
+      "Flooring mats": {},
+      "Flooring samples": {}
+    },
+    "Tiles": {
+      "Floor tiles": {},
+      "Wall tiles": {},
+      "Bathroom tiles": {},
+      "Kitchen tiles": {},
+      "Mosaic & border tiles": {},
+      "Outdoor tiles": {},
+      "Sample tiles": {}
+    },
+    "Flooring tools": {
+      "Underlay": {},
+      "Scotias & floor trims": {},
+      "Thresholds, t-bars & reducers": {},
+      "Underfloor heating": {}
+    },
+    "Tiling tools": {
+      "Tile trims": {},
+      "Grout": {},
+      "Adhesive": {},
+      "Tiling trowels": {},
+      "Tile cutters": {},
+      "Tile spacers": {},
+      "Tile scribes": {},
+      "Grouting tools": {},
+      "Tile kits": {},
+      "Sealant": {}
+    }
   },
   'Lighting & Electrical': {
-    'Indoor lights': {},
-    'Outdoor lights': {},
-    'LED lights': {},
-    'Electrical': {},
-    'Home security & safety': {},
-    'Smart home': {}
+    "Indoor lights": {
+      "Ceiling lights": {},
+      "Floor lamps": {},
+      "Light bulbs": {},
+      "Table lamps": {},
+      "Chandeliers": {},
+      "Lamp shades": {},
+      "Wall lights": {},
+      "Spotlights & downlights": {},
+      "Pendant lights": {},
+      "Light fixtures & fittings": {},
+      "Children's lights": {},
+      "Cabinet lights": {}
+    },
+    "Outdoor lights": {
+      "Wall lights": {},
+      "Security lights": {},
+      "String lights": {},
+      "Lanterns": {},
+      "Post lights": {},
+      "Spike lights": {},
+      "Decking lights": {},
+      "Solar security lights": {},
+      "Sensor wall lights": {},
+      "Solar wall lights": {},
+      "Solar string lights": {}
+    },
+    "LED lights": {
+      "All LED lights": {},
+      "LED ceiling lights": {},
+      "LED light bulbs": {},
+      "Indoor LED wall lights": {},
+      "LED floor lamps": {},
+      "LED spotlights": {},
+      "LED string lights": {},
+      "Outdoor LED wall lights": {},
+      "LED security lights": {},
+      "LED table lamps": {},
+      "LED decking lights": {},
+      "LED ground lights": {}
+    },
+    "Electrical": {
+      "Switches & sockets": {},
+      "Extension leads": {},
+      "Wiring": {},
+      "Cable management": {},
+      "Junction boxes": {},
+      "Consumer units": {},
+      "Door bells": {},
+      "Networking & Wi-Fi": {},
+      "TV aerials": {},
+      "Batteries": {},
+      "Plug timers": {},
+      "Electrician's tools": {}
+    },
+    "Home security & safety": {
+      "Security cameras": {},
+      "Burglar alarms": {},
+      "Smoke alarms": {},
+      "Carbon monoxide alarms": {},
+      "Door locks": {},
+      "Safes": {},
+      "Key cabinets": {},
+      "Bicycle locks": {},
+      "Fire safety": {},
+      "Padlocks": {},
+      "Safety signs": {}
+    },
+    "Smart home": {
+      "Smart light bulbs": {},
+      "Smart burglar alarms": {},
+      "Smart security cameras": {},
+      "Smart heating": {},
+      "Smart door locks": {},
+      "Smart door bells": {},
+      "Smart plugs": {}
+    }
   },
-  'Tools & Equipment': {
-    'Power tools': {},
-    'Power tool accessories': {},
-    'Hand tools': {},
-    'Safety & workwear': {},
-    'Equipment': {}
+  "Tools & Equipment": {
+    "Power tools": {
+      "Drills": {},
+      "Saws": {},
+      "Sanders": {},
+      "Multi tools & hobby tools": {},
+      "Angle grinders": {},
+      "Kits & twinpacks": {},
+      "Impact drivers & wrenches": {},
+      "Screwdrivers": {},
+      "Nail guns": {},
+      "Routers": {},
+      "Planers": {},
+      "Workshop machinery": {}
+    },
+    "Power tool accessories": {
+      "Sawing & blades": {},
+      "Drill bits": {},
+      "Sanding": {},
+      "Mixed drill bit sets": {},
+      "Multi tool accessories": {},
+      "Holesaws": {},
+      "Angle grinder discs": {},
+      "Screwdriver bits": {},
+      "Batteries & chargers": {},
+      "Routing": {},
+      "Chucks, keys & holders": {},
+      "Cleaning & preparation": {}
+    },
+    "Hand tools": {
+      "Hand saws": {},
+      "Measures & levels": {},
+      "Spanners & wrenches": {},
+      "Screwdrivers & keys": {},
+      "Tool kits": {},
+      "Demolition": {},
+      "Cutting tools": {},
+      "Plastering tools": {},
+      "Woodworking tools": {},
+      "Pliers": {},
+      "Bricklaying tools": {},
+      "Cable tools": {}
+    },
+    "Safety & workwear": {
+      "Workwear": {},
+      "Work trousers": {},
+      "Overalls & coveralls": {},
+      "Work jackets": {},
+      "Hoodies & sweatshirts": {},
+      "Work shorts": {},
+      "Footwear": {},
+      "Safety boots": {},
+      "Safety trainers": {},
+      "Gloves": {},
+      "Dust masks & filters": {},
+      "Goggles & glasses": {}
+    },
+    "Equipment": {
+      "Tool storage": {},
+      "Ladders & steps": {},
+      "Workbenches & trestles": {},
+      "Trolleys & carts": {},
+      "Cement mixers": {},
+      "Vacuum cleaners": {},
+      "Automotive": {},
+      "Workshop machinery": {},
+      "Air compressors": {},
+      "Torches & worklights": {},
+      "Tarpaulins, sheets & sacks": {},
+      "Generators": {}
+    }
   },
-  'Heating & Plumbing': {
-    'Radiators': {},
-    'Fires, stoves & heaters': {},
-    'Plumbing': {},
-    'Central heating': {},
-    'Air treatment': {},
+  "Heating & Plumbing": {
+    "Radiators": {
+      "Double panel radiators": {},
+      "Towel radiators": {},
+      "Column radiators": {},
+      "Designer radiators": {},
+      "Oil filled radiators": {},
+      "Vertical radiators": {},
+      "Radiator valves": {},
+      "Radiator covers": {},
+      "Cast iron radiators": {},
+      "Heating elements": {}
+    },
+    "Fires, stoves & heaters": {
+      "Electric fires": {},
+      "Stoves": {},
+      "Fireplace suites": {},
+      "Heaters": {},
+      "Gas fires": {},
+      "Fire surrounds": {},
+      "Fireplace accessories": {},
+      "Logs & charcoal": {},
+      "Fireplace hearths": {},
+      "All fires": {},
+      "Chimney sweeping": {}
+    },
+    "Plumbing": {
+      "Pipe fittings": {},
+      "Wastes & traps": {},
+      "Pipes": {},
+      "Bathroom fittings": {},
+      "Valves": {},
+      "Connectors": {},
+      "Plumbing tools": {},
+      "Elbows": {},
+      "Pipe insulation": {},
+      "Stopcocks": {}
+    },
+    "Central heating": {
+      "Thermostats": {},
+      "Underfloor heating": {},
+      "Water heaters": {},
+      "Heating treatments": {},
+      "Boilers": {}
+    },
+    "Air treatment": {
+      "Fans": {},
+      "Air conditioners": {},
+      "Ceiling fans": {},
+      "Dehumidifiers": {},
+      "Extractor fans": {},
+      "Ducting": {},
+      "Vents": {},
+      "Air purifiers": {},
+      "Humidifiers": {}
+    }
   },
-  'Clearance & Latest offers': {
-    'Home & garden clearance': {},
-    'DIY & building clearance': {},
-    'See our latest offers': {}
+  "Clearance & Latest offers": {
+    "Home & garden clearance": {
+      "Outdoor & garden": {},
+      "Kitchen": {},
+      "Home": {},
+      "Bathroom": {},
+      "Flooring": {},
+      "Lighting": {},
+      "Painting & decorating": {},
+      "Tiling": {},
+      "Bedroom & storage": {},
+      "Wallpaper": {}
+    },
+    "DIY & building clearance": {
+      "Tools": {},
+      "Building": {},
+      "Electrical & security": {},
+      "Hardware": {},
+      "Heating & cooling": {},
+      "Plumbing": {}
+    },
+    "See our latest offers": {
+      "Offers of the week": {},
+      "More great offers": {}
+    }
   }
 }
 
