@@ -11,8 +11,10 @@ class CategoriesController < ApplicationController
   private
 
   def set_category
-    puts category_params
-    Category.find_by(category_params)
+    category = Category.find_by(category_params)
+    return category if category.subcategories.present?
+
+    redirect_to category_products_path(category.id)
   end
 
   def category_params

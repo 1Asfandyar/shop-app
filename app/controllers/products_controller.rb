@@ -2,7 +2,17 @@
 
 # products controller
 class ProductsController < ApplicationController
-  def index; end
+  def index
+    @products = Product.with_category(params[:category_id]).with_attached_images
+  end
 
-  def show; end
+  def show
+    @product = Product.with_attached_images.find_by product_params
+  end
+
+  private
+
+  def product_params
+    params.permit(:id)
+  end
 end

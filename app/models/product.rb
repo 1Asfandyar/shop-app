@@ -9,6 +9,8 @@ class Product < ApplicationRecord
   validates :code, uniqueness: true
   # validate :validate_images
 
+  scope :with_category, ->(category_id) { joins(:categories).where(categories: { id: category_id }) }
+
   def validate_images
     return errors.add :images, 'at least one attachment' if images.empty?
 
