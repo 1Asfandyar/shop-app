@@ -1,0 +1,2 @@
+class ProductInquiry < ApplicationRecord
+end
