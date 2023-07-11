@@ -19,17 +19,13 @@
     .col-12.col-lg-6
       .card.bg-light.product-card.mb-3
         .card-body
-          %a{"data-target" => "#productModal", "data-toggle" => "modal", :href => ""}
-            %img.img-fluid{:src => "https://images.unsplash.com/photo-1620799139834-6b8f844fbe61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=772&q=80"}/
-            %p.text-center Zoom
+          %img.img-fluid{:src => "https://images.unsplash.com/photo-1620799139834-6b8f844fbe61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=772&q=80"}/
     / Add to cart
     .col-12.col-lg-6.add_to_cart_block
       .card.bg-light.product-card.mb-3
         .card-body
           %p.price 99.00 $
-          %a.btn.bg-li.btn-lg.btn-block.text-uppercase{:href => "cart.html"}
-            %i.fa.fa-shopping-cart
-              Add To Cart
+          = render partial: 'product_inquiries/form' 
         
   .row
     / Description
