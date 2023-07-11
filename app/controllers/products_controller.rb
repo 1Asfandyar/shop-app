@@ -4,7 +4,7 @@
 class ProductsController < ApplicationController
   def index; end
 
-  def show;
+  def show
     @product_inquiry = ProductInquiry.new
   end
 end
