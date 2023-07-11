@@ -1,0 +1,25 @@
+.custom-form-container
+  = form_with(model: @product_inquiry, url: product_inquiries_path, local: true, html: { class: "form-horizontal" }) do |form|
+    - if @product_inquiry.errors.any?
+      #error_explanation.alert.alert-danger
+        %h2
+          = pluralize(@product_inquiry.errors.count, "error")
+          prohibited this product inquiry from being saved:
+        %ul
+          - @product_inquiry.errors.full_messages.each do |message|
+            %li= message
+    .form-group
+      = form.label "Product Id"
+      .col-sm-12
+        = form.number_field :product_id, class: "form-control ", min: 0
+    .form-group
+      = form.label "Email"
+      .col-sm-12
+        = form.email_field :email, class: "form-control"
+    .form-group
+      = form.label "Comments"
+      .col-sm-12
+        = form.text_field :comments, class: "form-control no-resize", rows: 5
+    .form-group
+      .col-sm-offset-2.col-sm-12.mt-3
+        = form.submit "Submit Order", class: "btn btn-success"
