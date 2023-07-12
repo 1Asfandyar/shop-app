@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# product order
 class ProductInquiriesController < ApplicationController
   def create
     @product = Product.find_by(code: product_inquiry_params[:product_id])
@@ -11,7 +12,7 @@ class ProductInquiriesController < ApplicationController
           redirect_to product_inquiry_url(@product_inquiry), notice: 'Product inquiry was successfully created.'
         end
       else
-        format.html { render "products/show", status: :unprocessable_entity }
+        format.html { render 'products/show', status: :unprocessable_entity }
       end
     end
   end
