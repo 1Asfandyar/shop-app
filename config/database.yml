@@ -81,4 +81,6 @@ test:
 #
 production:
   <<: *default
+  database: <%= ENV["DATABASE_NAME"] || shop_app_production %>
+  username: <%= ENV["DATABASE_USERNAME"] || shop_app %>
   url: <%= ENV["DATABASE_URL"] %>
