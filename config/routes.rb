@@ -6,11 +6,7 @@ Rails.application.routes.draw do
   get 'categories/show'
   devise_for :users
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  # root 'home#index'
-  # root 'products#index'
-
-  root 'products#show'
-
+  root 'home#index'
   resources :categories, except: :index
   get '/products/:id', to: 'products#show', as: 'products'
   get 'category/:category_id/products/', to: 'products#index', as: 'category_products'
