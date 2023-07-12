@@ -26,7 +26,7 @@
       .card.bg-light.product-card.mb-3
         .card-body
           %p.price 99.00 $
-          = render partial: 'partials/form' 
+          = render partial: 'partials/form', locals: { product: @product, product_inquiry: @product_inquiry }
         
   .row
     / Description
@@ -38,38 +38,3 @@
         .card-body
           %p.card-text
             = @product.description
-          -# %p.card-text
-          -#   Contrairement à une opinion répandue, le Lorem Ipsum n'est pas simplement du texte aléatoire. Il trouve ses racines dans une oeuvre de la littérature latine classique datant de 45 av. J.-C., le rendant vieux de 2000 ans. Un professeur du Hampden-Sydney College, en Virginie, s'est intéressé à un des mots latins les plus obscurs, consectetur, extrait d'un passage du Lorem Ipsum, et en étudiant tous les usages de ce mot dans la littérature classique, découvrit la source incontestable du Lorem Ipsum. Il provient en fait des sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum" (Des Suprêmes Biens et des Suprêmes Maux) de Cicéron. Cet ouvrage, très populaire pendant la Renaissance, est un traité sur la théorie de l'éthique. Les premières lignes du Lorem Ipsum, "Lorem ipsum dolor sit amet...", proviennent de la section 1.10.32.
-    / Reviews
-    #reviews.col-12
-      .card.border-light.product-card.mb-3
-        .card-header.bg-li.text-white.text-uppercase
-          %i.fa.fa-comment
-          Reviews
-        .card-body
-          .review
-            %span.glyphicon.glyphicon-calendar{"aria-hidden" => "true"}
-            = succeed "January" do
-              %meta{:content => "01-01-2016", :itemprop => "datePublished"}/
-            %span.fa.fa-star
-            %span.fa.fa-star
-            %span.fa.fa-star
-            %span.fa.fa-star
-            %span.fa.fa-star
-            by Paul Smith
-            %p.blockquote
-            %p.mb-0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
-            %hr/
-          .review
-            %span.glyphicon.glyphicon-calendar{"aria-hidden" => "true"}
-            = succeed "January" do
-              %meta{:content => "01-01-2016", :itemprop => "datePublished"}/
-            %span.fa.fa-star{"aria-hidden" => "true"}
-            %span.fa.fa-star{"aria-hidden" => "true"}
-            %span.fa.fa-star{"aria-hidden" => "true"}
-            %span.fa.fa-star{"aria-hidden" => "true"}
-            %span.fa.fa-star{"aria-hidden" => "true"}
-            by Paul Smith
-            %p.blockquote
-            %p.mb-0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
-            %hr/

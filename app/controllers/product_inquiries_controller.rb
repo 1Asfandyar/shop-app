@@ -1,18 +1,18 @@
 # frozen_string_literal: true
 
+# product order
 class ProductInquiriesController < ApplicationController
   def create
-    @product_inquiry = ProductInquiry.new(product_inquiry_params)
+    @product = Product.find_by(code: product_inquiry_params[:product_id])
+    @product_inquiry = ProductInquiry.new(product_inquiry_params.merge(product_id: @product.id))
 
     respond_to do |format|
       if @product_inquiry.save
         format.html do
           redirect_to product_inquiry_url(@product_inquiry), notice: 'Product inquiry was successfully created.'
         end
-        format.json { render :show, status: :created, location: @product_inquiry }
       else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @product_inquiry.errors, status: :unprocessable_entity }
+        format.html { render 'products/show', status: :unprocessable_entity }
       end
     end
   end
