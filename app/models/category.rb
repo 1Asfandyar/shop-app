@@ -24,6 +24,8 @@ class Category < ApplicationRecord
     category_path
   end
 
+  scope :categories_without_subcategories, -> { where.not(id: pluck(:parent_id)) }
+
   def acceptable_image
     return unless cover_image.attached?
 
