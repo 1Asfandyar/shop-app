@@ -26,12 +26,18 @@ product_list = [
   }
 ]
 
-category = Category.find_by(name: 'Metal & wood paint')
+subcategories_list = Category.categories_without_subcategories
 
-product_list.each do |product|
-  new_product = category.products.find_or_create_by(name: product[:name], description: product[:description],
-                                                    code: product[:code])
-  product[:images].each do |image_path|
-    new_product.images.attach(io: File.open(image_path), filename: image_path.split('/').last)
+i = 0
+subcategories_list.each do |category|
+  product_list.each do |product|
+    new_product = category.products.find_or_create_by(name: "#{product[:name]}-#{i}", description: product[:description],
+                                                      code: "#{product[:code]}-#{i}")
+    i += 1
+    product[:images].each do |image_path|
+      file = File.open(image_path)
+      new_product.images.attach(io: file, filename: image_path.split('/').last)
+      file.close
+    end
   end
 end
