@@ -31,6 +31,8 @@ gem 'jbuilder', '~> 2.11.5'
 
 gem 'redis', '~> 4.0'
 
+gem 'figaro'
+
 gem 'sass-rails', '~> 6.0.0'
 
 gem 'bootstrap', '~> 5.0'
