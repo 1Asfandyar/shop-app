@@ -1,17 +1,17 @@
 .custom-form-container
-  = form_with(model: @product_inquiry, url: product_inquiries_path, local: true, html: { class: "form-horizontal" }) do |form|
-    - if @product_inquiry.errors.any?
+  = form_with(model: product_inquiry, url: product_inquiries_path, local: true, html: { class: "form-horizontal" }) do |form|
+    - if product_inquiry.errors.any?
       #error_explanation.alert.alert-danger
         %h2
-          = pluralize(@product_inquiry.errors.count, "error")
+          = pluralize(product_inquiry.errors.count, "error")
           prohibited this product inquiry from being saved:
         %ul
-          - @product_inquiry.errors.full_messages.each do |message|
+          - product_inquiry.errors.full_messages.each do |message|
             %li= message
     .form-group
       = form.label "Product Id"
       .col-sm-12
-        = form.number_field :product_id, class: "form-control ", min: 0
+        = form.text_field :product_id, class: "form-control ", min: 0, readonly: true, value: product.code
     .form-group
       = form.label "Email"
       .col-sm-12
