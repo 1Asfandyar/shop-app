@@ -4,6 +4,7 @@
     .card-body
         =link_to product.name, products_path(product), class: "h5 card-title text-decoration-none"
         -# %h5.card-title= product.name
-        %a.btn.btn-primary{:href => "#"}
-            %i.fas.fa-shopping-cart
-            Add to Cart
+        = form_with url: cart_items_path(product), method: :post, local: true do |form|
+            = form.button type: :submit, class: "btn btn-primary" do
+                %i.fas.fa-shopping-cart
+                Add to Cart
