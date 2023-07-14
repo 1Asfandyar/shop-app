@@ -4,8 +4,13 @@
 Rails.application.routes.draw do
   resources :product_inquiries
   get 'categories/show'
-  devise_for :users
-  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  devise_for :users, controllers: {
+    registrations: 'users/registrations',
+    sessions: 'users/sessions',
+  }
+  authenticate :user, ->(u) { u.role.admin? } do
+    mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  end
   root 'home#index'
   resources :categories, except: :index
   get '/products/:id', to: 'products#show', as: 'products'
