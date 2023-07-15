@@ -5,6 +5,7 @@ class CategoriesController < ApplicationController
   before_action :set_category
 
   def show
+    @categories = Category.with_attached_cover_image.only_root
     @category = set_category
   end
 
