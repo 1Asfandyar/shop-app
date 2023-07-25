@@ -4266,6 +4266,7 @@ textarea.form-control.is-invalid {
 	--bs-pagination-font-size: 0.875rem;
 	--bs-pagination-border-radius: 0.25rem;
 }
+
 .badge {
 	--bs-badge-padding-x: 0.65em;
 	--bs-badge-padding-y: 0.35em;
@@ -6686,7 +6687,7 @@ textarea.form-control.is-invalid {
 }
 .py-7 {
 	padding-top: 3rem !important;
-	padding-bottom: 6rem !important;
+	padding-bottom: 3rem !important;
 }
 .pt-0 {
 	padding-top: 0 !important;
@@ -11861,3 +11862,10 @@ textarea.form-control.is-invalid {
 		display: none !important;
 	}
 }
+
+
+.border-end {
+	border-right: 3px solid #fff; /* Change the color as per your design */
+	padding-right: 15px; /* Add some padding to separate the border from the content */
+  }
+  

@@ -1,10 +1,29 @@
-= render partial: 'partials/category_bar', categories: @categories
 / Header
-%header.rounded-5.bg-dark.py-7.header-image
+%header.rounded-5.bg-secondary.py-7.header-image
   .container.px-4.px-lg-5.my-5
   .text-left.text-white.m-5
-    %h1.display-4.fw-bolder RAFIQ GENERAL TRADING 
-    %p.lead.fw-normal.text-white-50.mb-0 U.K LTD (RGT UK LTD)
+    .row
+      .col-md-6.border-end
+        %div
+          %h1.display-4.fw-bolder RAFIQ GENERAL TRADING
+          %p.lead.fw-normal.text-white-50.mb-2 U.K LTD (RGT UK LTD)
+          %h1.display-4 House Hold Products
+          %h1.display-4.mb-2 To Your Doorsteps
+          %p
+            We believe in providing you with products that will help you in everyday life for the rest of your life.
+            Browse our website and see what we have to offer. Like something? We deliver! Simply add it to your cart and post a request.
+            Our designated team will be in contact with you within 24-hours.
+          .btn.btn-dark.rounded-5 Show Products
+
+      .col-md-6
+       
+
+
+
+
+
+-# = render partial: 'partials/category_bar', categories: @categories
+
 / Section
 %section.py-5
   .container.px-4.px-lg-5.mt-5
