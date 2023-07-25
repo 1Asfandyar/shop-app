@@ -1,28 +1,35 @@
 .bg-li{
-    color: #343a40 !important;
-    background-color: #343a40 !important;
-    border-color: #343a40 !important;
+    color: #053768 !important;
+    background-color: #053768 !important;
+    border-color: #053768 !important;
 }
 .white{
   color: white !important;
 }
 .navbar1 {
-    background-color: #5c5e60;
+    // background-color: #ffffff;
     list-style-type: none;
     padding: 0;
     display: flex;
     justify-content: space-between;
-    margin: 0px !important
+    text-decoration: none;
+  }
+  .custom-badge-style {
+    background-color: grey;
+    color: white;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .navbar1 li {
     margin-right: 10px;
-    position: relative;
   }
   
   .navbar1 a {
     text-decoration: none;
-    color: #000;
   }
   
   .navbar1 a:before {
@@ -38,10 +45,9 @@
     transition: all 0.3s ease-in-out;
   }
   
-  .navbar1 a:hover:before {
-    visibility: visible;
-    transform: scaleX(1);
-  }
+
   .navbar1 a:hover {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
   }
+
+  
