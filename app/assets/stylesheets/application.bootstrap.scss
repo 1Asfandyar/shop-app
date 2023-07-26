@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 body{
     margin: 10px !important;
-    background:#f1f2f7;
+    background:#a8afd2;
     font-family: "Poppins", sans-serif;
     }
 @import 'bootstrap/scss/bootstrap';
@@ -13,6 +13,8 @@ body{
 @import 'product_page';
 @import 'navbar';
 @import 'product_inquiry_form';
+@import 'new_arrivals';
+
 
 
 

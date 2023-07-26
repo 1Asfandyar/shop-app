@@ -11865,7 +11865,12 @@ textarea.form-control.is-invalid {
 
 
 .border-end {
-	border-right: 3px solid #fff; /* Change the color as per your design */
+	border-right: 2px solid #000 !important; /* Change the color as per your design */
 	padding-right: 15px; /* Add some padding to separate the border from the content */
   }
   
+.shadow{
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+	outline: none !important;
+	box-shadow: none !important;
+}
