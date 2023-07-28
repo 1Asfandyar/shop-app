@@ -1,3 +1,5 @@
+= javascript_include_tag 'scroll_to_new_arrival'
+
 / Header
 %header.rounded-5.bg-secondary.py-7.header-image.mb-5
   .container.px-4.px-lg-5.my-5
@@ -13,7 +15,10 @@
             We believe in providing you with products that will help you in everyday life for the rest of your life.
             Browse our website and see what we have to offer. Like something? We deliver! Simply add it to your cart and post a request.
             Our designated team will be in contact with you within 24-hours.
-          .btn.btn-dark.rounded-5 Show Products
+          %div.card.custom{style: "min-height: 30px; width: 150px"}
+            %button.btn.btn-dark.rounded-5#new-arrival-products{:onclick => "scrollToNewArrival()"} Show Products
+
+
 
       .col-md-4
         .container
@@ -23,7 +28,13 @@
               %p.lead.fw-normal.text-white-50.mb-2 All rights reserved.
               %p We are recognised by the UK government as official providers for household products.Our credentials are proof of our authenticity, genuineness and commitment to our clients
               %p We at Rafiq General Trading L.L.C are committed to provide you with the best products to make your life easy. Browse our products for more information on what we provide.
-  
+
+%section
+  .mb-5
+    .row
+%section
+  .mb-5
+    .row
 
 %section
   .mb-5
@@ -59,6 +70,12 @@
         %p.mt-4.mb-4.mr-4{ style: "color: #053768;" } We want you to be completely satisfied with your purchase. If for any reason you're not happy with your order, we offer a hassle-free return policy. Simply contact our friendly customer support team, and they will guide you through the easy return process. Shop with confidence knowing we've got your back!
 
 
+%section
+  .mb-5
+    .row
+%section
+  .mb-5
+    .row
 
 %section.mb-4
   %div.jumbotron.container-fluid
@@ -68,15 +85,29 @@
     %h5.font-weight-100 Introducing our captivating collection of new arrivals that will leave you enthralled. From trendy fashion pieces to cutting-edge gadgets and innovative home decor, our latest additions are thoughtfully curated to elevate your lifestyle. Experience the excitement of exploring fresh designs, premium quality, and the most sought-after trends. Embrace the spirit of innovation and style as you embark on a journey of discovering our captivating new arrivals.
 
 %section
-.jumbotron-fluid.bg-white.mb-5
-  .container.px-1.px-lg-1
-    .row.gx-4.gx-lg-5.row-cols-md-12
-      .col-md-12.overflow-auto
-        %div{style: "display: flex;"}
-          - for category in @categories do
-            = render "partials/category", category: category
-          %end
+  .mb-5
+    .row
+%section
+  .mb-5
+    .row
+%section
+#new-products-section
+  .jumbotron-fluid.bg-white.mb-5
+    .container.px-1.px-lg-1
+      .row.gx-4.gx-lg-5.row-cols-md-12
+        .col-md-12.overflow-auto
+          %div{style: "display: flex;"}
+            - for product in @new_arrivals
+              .col.m-3
+                = render partial: 'partials/product_card', locals: { product: product, cart: nil }  
+            %end
 
+%section
+  .mb-5
+    .row
+%section
+  .mb-5
+    .row
 -# = render partial: 'partials/category_bar', categories: @categories
 %section.mb-4
   %div.jumbotron2.container-fluid
