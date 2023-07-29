@@ -1,0 +1,40 @@
+%link#bootstrap-css{:href => "//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css", :rel => "stylesheet"}
+%link{:crossorigin => "anonymous", :href => "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", :integrity => "sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", :rel => "stylesheet"}/
+
+= render partial: 'partials/category_bar', categories: @categories
+
+%section.jumbotron.text-center
+  .container
+    %h1.jumbotron-heading= @product.name
+    %p.lead.text-muted.mb-0= @product.description[0, 100]
+.container
+  .row
+    .col
+      %nav{"aria-label" => "breadcrumb"}
+        %ol.breadcrumb
+          %li.breadcrumb-item
+            %a{:href => "/"} Home
+          %li.breadcrumb-item.active{"aria-current" => "page"}=@product.name
+.container
+  .row
+    / Image
+    .col-12.col-lg-6
+      .card.bg-light.product-card.mb-3
+        .card-body
+          %img.img-fluid{:src => url_for(@product.images[0])}/
+    / Add to cart
+    .col-12.col-lg-6.add_to_cart_block
+      .card.bg-light.product-card.mb-3
+        .card-body
+          = render partial: 'partials/form', locals: { product: @product, product_inquiry: @product_inquiry }
+        
+  .row
+    / Description
+    .col-12
+      .card.border-light.product-card.mb-3
+        .card-header.bg-li.text-white.text-uppercase
+          %i.fa.fa-align-justify
+          Description
+        .card-body
+          %p.card-text
+            = @product.description

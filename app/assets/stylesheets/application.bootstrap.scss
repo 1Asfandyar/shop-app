@@ -1,4 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+body{
+    margin: 10px !important;
+    background:#a8afd2;
+    font-family: "Poppins", sans-serif;
+    }
 @import 'bootstrap/scss/bootstrap';
 @import 'bootstrap-icons/font/bootstrap-icons';
 @import 'index';
 @import 'header';
+@import 'card';
+@import 'products_page';
+@import 'product_page';
+@import 'navbar';
+@import 'product_inquiry_form';
+@import 'new_arrivals';
+
+
+
+
+
+
+
