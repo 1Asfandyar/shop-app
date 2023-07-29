@@ -3,6 +3,8 @@
     %ul.navbar-nav.list-unstyled
       %li.nav-item
         = link_to "Home", root_path, class: "text-white nav-link active", "aria-current": "page"
+      %li.nav-item
+        = link_to "Products", search_products_path, class: "text-white nav-link active", "aria-current": "page"
 
 
     %button.navbar-toggler{"aria-controls" => "navbarNav", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-mdb-target" => "#navbarNav", "data-mdb-toggle" => "collapse", :type => "button"}
