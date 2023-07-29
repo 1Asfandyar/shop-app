@@ -9,7 +9,6 @@ class ProductsController < ApplicationController
 
   def show
     @categories = Category.with_attached_cover_image.only_root
-
     @product_inquiry = ProductInquiry.new
     @product = Product.with_attached_images.find_by product_params
   end
