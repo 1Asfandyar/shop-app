@@ -9,7 +9,7 @@ class ProductInquiriesController < ApplicationController
     respond_to do |format|
       if @product_inquiry.save
         format.html do
-          redirect_to product_inquiry_url(@product_inquiry), notice: 'Product inquiry was successfully created.'
+          redirect_to root_path
         end
       else
         format.html { render 'products/show', status: :unprocessable_entity }
