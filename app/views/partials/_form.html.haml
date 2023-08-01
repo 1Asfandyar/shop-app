@@ -1,5 +1,5 @@
 .custom-form-container
-  = form_with(model: product_inquiry, url: product_inquiries_path, local: true, html: { class: "form-horizontal" }) do |form|
+  = form_with(model: product_inquiry, url: product_inquiries_path, remote: true, html: { class: "form-horizontal" }) do |form|
     - if product_inquiry.errors.any?
       #error_explanation.alert.alert-danger
         %h2
@@ -11,11 +11,11 @@
     .form-group
       = form.label "Product Id"
       .col-sm-12
-        = form.text_field :product_id, class: "form-control ", min: 0, readonly: true, value: product.code
+        = form.text_field :product_id, class: "form-control ", min: 0, readonly: true, value: product.id
     .form-group
       = form.label "Email"
       .col-sm-12
-        = form.email_field :email, class: "form-control"
+        = form.email_field :email, placeholder: "...this email will be used to contact you back", class: "form-control"
     .form-group
       = form.label "Comments"
       .col-sm-12

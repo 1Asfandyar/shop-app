@@ -3,7 +3,7 @@
 # product order
 class ProductInquiriesController < ApplicationController
   def create
-    @product = Product.find_by(code: product_inquiry_params[:product_id])
+    @product = Product.find_by(id: product_inquiry_params[:product_id])
     @product_inquiry = ProductInquiry.new(product_inquiry_params.merge(product_id: @product.id))
 
     respond_to do |format|

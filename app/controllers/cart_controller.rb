@@ -8,21 +8,21 @@ class CartController < ApplicationController
     def create_cookie
         existing_values = ["#{cookies[:cart_id]}"]
         @product = Product.find_by(cart_params) 
-        unless CGI.unescape(existing_values[0]).include?("#{@product.code}")
-            cookie_value = existing_values + ["#{@product.code}"]
+        unless CGI.unescape(existing_values[0]).include?("#{@product.id}")
+            cookie_value = existing_values + ["#{@product.id}"]
             cookies[:cart_id] = cookie_value
         end
     end
 
     def cart_items
         return @cart_product = nil if cookies[:cart_id].nil?
-        @cart_products = Product.where(code: cookies[:cart_id].split("&"))
+        @cart_products = Product.where(id: cookies[:cart_id].split("&"))
     end
 
     def remove_item
         existing_values = ["#{cookies[:cart_id]}"]
-        if CGI.unescape(existing_values[0]).include?("#{@product.code}")
-            cookie_value = existing_values[0].split("&").reject { |item| item == "#{@product.code}" }
+        if CGI.unescape(existing_values[0]).include?("#{@product.id}")
+            cookie_value = existing_values[0].split("&").reject { |item| item == "#{@product.id}" }
             cookies[:cart_id] = cookie_value
         end
     end
