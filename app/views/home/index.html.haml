@@ -1,5 +1,6 @@
 = javascript_include_tag 'scroll_to_new_arrival'
 
+#cart-toast-container(style="position: fixed; top: 20px; right: 20px; z-index: 1000;")
 / Header
 %header.rounded-5.bg-secondary.py-7.header-image.mb-5
   .container.px-4.px-lg-5.my-5
@@ -120,5 +121,3 @@
       - for category in @categories do
         = render "partials/category", category: category
       %end
-
-
