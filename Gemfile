@@ -38,6 +38,8 @@ gem 'figaro'
 
 gem 'sass-rails', '~> 6.0.0'
 
+gem 'kaminari', '~> 1.2', '>= 1.2.2'
+
 gem 'bootstrap', '~> 5.0'
 
 gem 'cloudinary'
