@@ -4,7 +4,7 @@
   .card{id: "item-#{product.id}"}
     %img.card-img-top{alt: "Product Image", src: url_for(product.images[0])}/
     .card-body
-      = link_to product.name.slice(0, 50), products_path(product), class: "h5 card-title text-decoration-none"
+      = link_to product.name.slice(0, 40), products_path(product), class: "h5 card-title text-decoration-none"
       - if cart.nil?
         = form_with url: cart_items_path(product), method: :post, local: true do |form|
           = form.button type: :submit, class: "btn btn-primary-custom btn-sm",onclick: "flashMessage('Product has been added to cart!','success')"  do
