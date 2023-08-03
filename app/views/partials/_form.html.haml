@@ -2,8 +2,6 @@
   = form_with(model: product_inquiry, url: product_inquiries_path, remote: true, html: { class: "form-horizontal" }) do |form|
     - if product_inquiry.errors.any?
       #error_explanation.alert.alert-danger
-        %h2
-          = pluralize(product_inquiry.errors.count, "error")
         %ul
           - product_inquiry.errors.full_messages.each do |message|
             %li= message
