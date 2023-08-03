@@ -4,7 +4,6 @@
       #error_explanation.alert.alert-danger
         %h2
           = pluralize(product_inquiry.errors.count, "error")
-          prohibited this product inquiry from being saved:
         %ul
           - product_inquiry.errors.full_messages.each do |message|
             %li= message
