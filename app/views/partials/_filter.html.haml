@@ -1,0 +1,36 @@
+.row
+  .col
+    .dropdown
+      %button#dropdown1.btn.btn-secondary.dropdown-toggle{"aria-expanded" => "false", "data-bs-toggle" => "dropdown", type: "button"}
+        Dropdown 1
+      %ul.dropdown-menu{"aria-labelledby" => "dropdown1"}
+        %li
+          %a.dropdown-item{href: "#"} Option 1
+        %li
+          %a.dropdown-item{href: "#"} Option 2
+        %li
+          %a.dropdown-item{href: "#"} Option 3
+  / Second Dropdown
+  .col
+    .dropdown.mt-3
+      %button#dropdown2.btn.btn-secondary.dropdown-toggle{"aria-expanded" => "false", "data-bs-toggle" => "dropdown", type: "button"}
+        Dropdown 2
+      %ul.dropdown-menu{"aria-labelledby" => "dropdown2"}
+        %li
+          %a.dropdown-item{href: "#"} Option A
+        %li
+          %a.dropdown-item{href: "#"} Option B
+        %li
+          %a.dropdown-item{href: "#"} Option C
+  / Third Dropdown
+  .col
+    .dropdown.mt-3
+      %button#dropdown3.btn.btn-secondary.dropdown-toggle{"aria-expanded" => "false", "data-bs-toggle" => "dropdown", type: "button"}
+        Dropdown 3
+      %ul.dropdown-menu{"aria-labelledby" => "dropdown3"}
+        %li
+          %a.dropdown-item{href: "#"} Choice X
+        %li
+          %a.dropdown-item{href: "#"} Choice Y
+        %li
+          %a.dropdown-item{href: "#"} Choice Z
