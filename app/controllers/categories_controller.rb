@@ -9,6 +9,12 @@ class CategoriesController < ApplicationController
     @category = set_category
   end
 
+  def subcategories
+    category = Category.find_by(category_params)
+    @subcategories = category.subcategories
+    render json: { subcategories: @subcategories }, status: :ok
+  end
+
   private
 
   def set_category
