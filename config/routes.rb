@@ -14,10 +14,11 @@ Rails.application.routes.draw do
   root 'home#index'
   resources :categories, except: :index
   resources :search_products, only: %i[index]
+  get '/category/:id/subcategories', to: 'category#subcategories'
   get '/products/:id', to: 'products#show', as: 'products'
   get 'category/:category_id/products/', to: 'products#index', as: 'category_products'
   post '/add_to_cart/:id', to: 'cart#create_cookie', as: 'cart_items'
   get '/cart_items', to: 'cart#cart_items', as: 'cart'
-  delete '/cart_items/:id', to: 'cart#remove_item' , as: 'remove_item'
+  delete '/cart_items/:id', to: 'cart#remove_item', as: 'remove_item'
   # resources :products, only: :show
 end
