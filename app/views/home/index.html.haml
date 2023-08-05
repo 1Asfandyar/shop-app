@@ -1,5 +1,6 @@
 = javascript_include_tag 'scroll_to_new_arrival'
 
+#cart-toast-container(style="position: fixed; top: 20px; right: 20px; z-index: 1000;")
 / Header
 %header.rounded-5.bg-secondary.py-7.header-image.mb-5
   .container.px-4.px-lg-5.my-5
@@ -24,10 +25,9 @@
         .container
           .card.m-4{style: "border-radius: 15px; background-color: #053768; color: white; width:100%"}
             .card-body
-              %h3.card-title Since 1995
-              %p.lead.fw-normal.text-white-50.mb-2 All rights reserved.
-              %p We are recognised by the UK government as official providers for household products.Our credentials are proof of our authenticity, genuineness and commitment to our clients
-              %p We at Rafiq General Trading L.L.C are committed to provide you with the best products to make your life easy. Browse our products for more information on what we provide.
+              %p.lead.fw-normal.text-white-50.mb-2 About Us
+              %p We at Rafiq General Trading UK LTD are passionate about providing high-quality tools, equipment, hardware, and household products to our valued customers. We take pride in offering a wide range of top-notch products that cater to various needs.
+              %p Our commitment to excellence, customer satisfaction, and reliable service is our utmost priority. Browse our products for more information on what we provide. 
 
 %section
   .mb-5
@@ -82,7 +82,7 @@
     %h1 PURCHASE OUR NEW ARRIVALS
     %svg{xmlns: "http://www.w3.org/2000/svg", width: "50", fill: "currentColor", class: "bi bi-airplane-engines", viewBox: "0 0 16 16"}
       %path{d: "M8 0c-.787 0-1.292.592-1.572 1.151A4.347 4.347 0 0 0 6 3v3.691l-2 1V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.191l-1.17.585A1.5 1.5 0 0 0 0 10.618V12a.5.5 0 0 0 .582.493l1.631-.272.313.937a.5.5 0 0 0 .948 0l.405-1.214 2.21-.369.375 2.253-1.318 1.318A.5.5 0 0 0 5.5 16h5a.5.5 0 0 0 .354-.854l-1.318-1.318.375-2.253 2.21.369.405 1.214a.5.5 0 0 0 .948 0l.313-.937 1.63.272A.5.5 0 0 0 16 12v-1.382a1.5 1.5 0 0 0-.83-1.342L14 8.691V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v.191l-2-1V3c0-.568-.14-1.271-.428-1.849C9.292.591 8.787 0 8 0zm0 3c0-.432.11-.979.322-1.401C7.542 1.159 7.787 1 8 1c.213 0 .458.158.678.599C8.889 2.02 9 2.569 9 3v4a.5.5 0 0 0 .276.447l5.448 2.724a.5.5 0 0 1 .276.447v.792l-5.418-.903a.5.5 0 0 0-.575.41l-.5 3a.5.5 0 0 0 .14.437l.646.646H6.707l.647-.646a.5.5 0 0 0 .14-.436l-.5-3a.5.5 0 0 0-.576-.411L1 11.41v-.792a.5.5 0 0 1 .276-.447l5.448-2.724A.5.5 0 0 0 7 7V3z"}
-    %h5.font-weight-100 Introducing our captivating collection of new arrivals that will leave you enthralled. From trendy fashion pieces to cutting-edge gadgets and innovative home decor, our latest additions are thoughtfully curated to elevate your lifestyle. Experience the excitement of exploring fresh designs, premium quality, and the most sought-after trends. Embrace the spirit of innovation and style as you embark on a journey of discovering our captivating new arrivals.
+    %h5.font-weight-100 Introducing our captivating collection of new arrivals that will leave you enthralled. Explore the latest additions to our collection of high quality tools, equipment, and hardware. We're excited to bring you the cutting-edge solutions that will elevate your projects to new heights. Experience the excitement of exploring fresh designs, premium quality, and the most sought-after products.
 
 %section
   .mb-5
@@ -112,7 +112,7 @@
 %section.mb-4
   %div.jumbotron2.container-fluid
     %h1 CATEGORIES
-    %h5.font-weight-100 Welcome to our vast selection of shop categories! Explore a diverse range of products carefully curated to cater to your unique needs and preferences. From trendy fashion and stylish accessories to cutting-edge gadgets, home decor, and much more, our shop categories have something for everyone. Whether you are a fashion enthusiast, a tech-savvy individual, or someone seeking to spruce up your living space, our thoughtfully organized shop categories ensure a seamless shopping experience.
+    %h5.font-weight-100 Welcome to our vast selection of shop categories! Explore a diverse range of products carefully curated to cater to your unique needs and preferences. From high quality accessories to cutting-edge gadgets, home decor, and much more, our shop categories have something for everyone. Our thoughtfully organized shop categories ensure a seamless shopping experience.
 / Section
 %section
   .container.px-4.px-lg-5.mt-5
@@ -120,5 +120,3 @@
       - for category in @categories do
         = render "partials/category", category: category
       %end
-
-

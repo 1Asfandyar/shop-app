@@ -6,7 +6,6 @@ class Product < ApplicationRecord
   has_many_attached :images
 
   validates :name, uniqueness: true
-  validates :code, uniqueness: true
   # validate :validate_images
 
   scope :with_category, ->(category_id) { joins(:categories).where(categories: { id: category_id }) }

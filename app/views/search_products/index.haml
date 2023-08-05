@@ -1,0 +1,22 @@
+= render partial: 'partials/category_bar', categories: @categories_bar
+#cart-toast-container(style="position: fixed; top: 20px; right: 20px; z-index: 1000;")
+
+%section.mb-4
+  %div.h3.jumbotron.container-fluid.text-center PRODUCTS
+
+%section.py-5
+  .container.px-4.px-lg-5.mt-5
+    .row.gx-4.gx-lg-5.row-cols-md-3
+      - if @products.present?
+        - for product in @products
+          .col.mb-5
+            = render partial: 'partials/product_card', locals: { product: product, cart: nil }
+      - else
+        .d-flex.align-items-center.justify-content-center.h-100
+          .h3.ml-4 No Products Found
+
+%section.py-5
+  .row
+    .col-12
+      .pagination.justify-content-center
+        = will_paginate @products, renderer: BootstrapPagination::Rails, class: 'pagination-sm justify-content-center'

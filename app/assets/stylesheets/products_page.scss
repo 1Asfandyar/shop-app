@@ -70,3 +70,17 @@
   border-radius: 30px;
   overflow: hidden;
 }
+
+/* app/assets/stylesheets/application.css (or application.scss) */
+.custom-text-field {
+  border: 1px solid #ced4da;
+  padding: 5px 10px;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: none;
+}
+
+.search-button{
+  margin-bottom: 3px;
+}
+

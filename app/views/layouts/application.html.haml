@@ -2,8 +2,10 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title ShopApp
+    %title Rafiq General Trading
     %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
+    %link{href: 'https://cdn.jsdelivr.net/npm/bootstrap@5.0/dist/css/bootstrap.min.css', rel: 'stylesheet'}
+
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag "application", "data-turbo-track": "reload"
@@ -14,8 +16,11 @@
     -# %p.alert= alert
     = yield        
     / Footer
-    %footer.py-5.bg-li
+    %footer.bg-li
       .container
-        %p.m-0.text-center.text-white Copyright © Your Website 2023
+        .m-0.text-center.text-white 
+          %p Whiteladies Business Centre, 12 Whiteladies Road, Bristol, BS8 1PD
+          %p Rafiqgeneraltarding@yahoo.com
+          %p (+44) 7786012104
     / Bootstrap core JS
     %script{src: "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"}

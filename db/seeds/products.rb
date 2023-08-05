@@ -21,7 +21,7 @@ product_list = [
     Contains 1,2-benzisothiazol-3(2H)-one, C(M)IT/MIT(3:1) and methylisothiazolinone.May produce an allergic reaction.Warning! Hazardous respirable droplets may be formed when sprayed. Do not breathe spray or mist
     Health and safety
     Please note that this item has additional safety or regulatory datasheets available. The product may have possible health and safety hazards covered in these documents. Refer to the container for full information and always follow the instructions.",
-    code: '5010212585092',
+    id: '5010212585092',
     images: Dir[Rails.root.join('db/seeds/images/*.jpg')].sort
   }
 ]
@@ -32,7 +32,7 @@ i = 0
 subcategories_list[1...10].each do |category|
   product_list.each do |product|
     new_product = category.products.find_or_create_by(name: "#{product[:name]}-#{i}", description: product[:description],
-                                                      code: "#{product[:code]}-#{i}")
+                                                      id: "#{product[:id]}-#{i}")
     i += 1
     # product[:images].each do |image_path|
     #   file = File.open(image_path)
